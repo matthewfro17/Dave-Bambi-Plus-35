@@ -16,3 +16,5 @@ exbungo
 baldi
 tb-funny-man
 shaggy
+isaac
+gwen
