@@ -391,7 +391,7 @@ class FreeplayState extends MusicBeatState
 				if (FlxG.save.data.importumaniaFound)
 					addWeek(['Importumania'], 14, ['importumania']);
 				
-				addWeek([,'yield'], 21 ['bamber']);
+				addWeek(['Yield'], 21, ['bamber']);
 			case 'cover':
 				addWeek(['Confronting-Yourself'], 4, ['tristan-festival']);
 				addWeek(['Cob', 'Super-Saiyan'], 1, ['dave', 'dave-annoyed']);
