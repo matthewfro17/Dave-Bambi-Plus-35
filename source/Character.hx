@@ -86,6 +86,33 @@ class Character extends FlxSprite
 				nativelyPlayable = true;
 
 				flipX = true;
+			case 'isaac':
+				frames = Paths.getSparrowAtlas('characters/Isaac', 'shared');
+				
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Sing_Up', 24, false);
+				animation.addByPrefix('singLEFT', 'Sing_Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Sing_Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Sing_Down', 24, false);
+				animation.addByPrefix('singUP-alt', 'Beatbox_Up', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'Beatbox_Left', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'Beatbox_Right', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'Beatbox_Down', 24, false);
+				animation.addByPrefix('singUPmiss', 'Miss_Up', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'Miss_Left', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'Miss_Right', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'Miss_Down', 24, false);
+				loadOffsetFile(curCharacter);
+
+				skins.set('gfSkin', 'gwen');
+
+				barColor = FlxColor.fromRGB(0, 204, 255);
+
+				playAnim('idle');
+
+				nativelyPlayable = true;
+
+				flipX = true;
 			case 'bf-3d':
 				frames = Paths.getSparrowAtlas('characters/3d_bf', 'shared');
 
@@ -228,6 +255,29 @@ class Character extends FlxSprite
 				skins.set('3d', 'gf-3d');
 
 				barColor = FlxColor.fromString('#33de39');
+
+				playAnim('danceRight');
+			case 'gwen':
+				// GIRLFRIEND CODE
+				frames = Paths.getSparrowAtlas('characters/Gwen', 'shared');
+
+				animation.addByPrefix('cheer', 'GF Cheer', 24, false);
+				animation.addByPrefix('singLEFT', 'GF left note', 24, false);
+				animation.addByPrefix('singRIGHT', 'GF Right Note', 24, false);
+				animation.addByPrefix('singUP', 'GF Up Note', 24, false);
+				animation.addByPrefix('singDOWN', 'GF Down Note', 24, false);
+				animation.addByIndices('sad', 'gf sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+				animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByIndices('hairBlow', "GF Dancing Beat Hair blowing", [0, 1, 2, 3], "", 24);
+				animation.addByIndices('hairFall', "GF Dancing Beat Hair Landing", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "", 24, false);
+				animation.addByPrefix('scared', 'GF FEAR', 24);
+
+				loadOffsetFile(curCharacter);
+
+				skins.set('3d', 'gf-3d');
+
+				barColor = FlxColor.fromRGB(165, 0, 77);
 
 				playAnim('danceRight');
 			case 'gf-bent':
