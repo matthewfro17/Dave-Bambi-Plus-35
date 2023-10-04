@@ -2068,7 +2068,7 @@ class PlayState extends MusicBeatState
 					picnic.color = variantColor;
 					insert(members.indexOf(cornBag), picnic);
 				}
-			case 'bamber-farm'':
+			case 'bamber-farm':
 				bgZoom = 0.6;
 
 				var bg:BGSprite = new BGSprite('bg', -858, -348, Paths.image('backgrounds/Bamber_Farm/Sky), null, 0.6, 0.6);
