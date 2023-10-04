@@ -871,7 +871,21 @@ class Character extends FlxSprite
 				antialiasing = false;
 		
 				playAnim('idle');
+			case 'bamber':
+				frames = Paths.getSparrowAtlas('characters/Bamber', 'shared');
+				animation.addByPrefix('idle', 'Bamber Idle', 24, false);
+				for (anim in ['Left', 'Down', 'Up', 'Right'])
+				{
+					animation.addByPrefix('sing${anim.toUpperCase()}', 'Bamber Sing $anim', 24, false);
+					animation.addByPrefix('sing${anim.toUpperCase()}miss', 'Bamber Miss $anim', 24, false);
+				}
+				animation.addByPrefix('singSmash', 'Bamber Phone Break', 24, false);
+				
+				barColor = FlxColor.fromRGB(113, 196, 25);
+				
+				globalOffset = [18, 408];
 
+				playAnim('idle');
 			case 'bambi-new':
 				frames = Paths.getSparrowAtlas('bambi/bambiRemake', 'shared');
 				animation.addByPrefix('idle', 'bambi idle', 24, false);
