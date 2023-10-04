@@ -2071,12 +2071,12 @@ class PlayState extends MusicBeatState
 			case 'bamber-farm':
 				bgZoom = 0.6;
 
-				var bg:BGSprite = new BGSprite('bg', -858, -348, Paths.image('backgrounds/Bamber_Farm/Sky), null, 0.6, 0.6);
+				var bg:BGSprite = new BGSprite('bg', -858, -348, Paths.image('backgrounds/Bamber_Farm/Sky', 'shared'), null, 0.6, 0.6);
 				bg.setGraphicSize(Std.int(bg.width * 1.6));
 				sprites.add(bg);
 				add(bg);
 
-				var flatgrass:BGSprite = new BGSprite('flatgrass', -410, 185, Paths.image('backgrounds/Bamber_Farm/Wheat_Fields_Back'), null, 0.65, 0.65);
+				var flatgrass:BGSprite = new BGSprite('flatgrass', -410, 185, Paths.image('backgrounds/Bamber_Farm/Wheat_Fields_Back', 'shared'), null, 0.65, 0.65);
 				flatgrass.setGraphicSize(Std.int(flatgrass.width * 1));
 				flatgrass.updateHitbox();
 				sprites.add(flatgrass);
