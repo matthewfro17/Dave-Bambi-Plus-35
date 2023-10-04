@@ -78,6 +78,7 @@ class FreeplayState extends MusicBeatState
 		0xFFCC5555,    // Electric-Cockaldoodledoo
 		0xFF008E00,    // longnosejohn
 		0xFFFFFFFF,    // cuzsiee
+		0xFF71C419,    // Bamber (testing stuff)
     ];
 	public static var skipSelect:Array<String> = 
 	[
@@ -92,7 +93,8 @@ class FreeplayState extends MusicBeatState
 		'eletric-cockadoodledoo',
 		'electric-cockaldoodledoo',
 		'super-saiyan',
-		'foolhardy'
+		'foolhardy',
+		'yield'
 	];
 
 	public static var noExtraKeys:Array<String> = 
@@ -130,7 +132,8 @@ class FreeplayState extends MusicBeatState
 		'secret-mod-leak',
 		'vs-dave-thanksgiving',
 		'bonkers',
-		'duper'
+		'duper',
+		'yield'
 	];
 
 	private var camFollow:FlxObject;
@@ -387,6 +390,8 @@ class FreeplayState extends MusicBeatState
 				addWeek(['Duper'], 2, ['bambi-angey', 'bambi-new']);
 				if (FlxG.save.data.importumaniaFound)
 					addWeek(['Importumania'], 14, ['importumania']);
+				
+				addWeek([,'yield'], 21 ['bamber']);
 			case 'cover':
 				addWeek(['Confronting-Yourself'], 4, ['tristan-festival']);
 				addWeek(['Cob', 'Super-Saiyan'], 1, ['dave', 'dave-annoyed']);
